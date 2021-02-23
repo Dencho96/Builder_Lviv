@@ -29,4 +29,21 @@ p {
 body {
     overflow-x: hidden;
     background-color: white;
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1310px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+address {
+    font-style: normal;
+}
+
+.d-flex{
+    display: flex;
 }

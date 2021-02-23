@@ -1,0 +1,91 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    &__top {
+        background-color: rgba(0, 0, 0, 0.31);
+    }
+
+    &__address {
+        height: 54px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__phone-list{
+        margin-right: 105px;        
+        font-size: 16px;
+    }
+
+    &__phone-item {
+        &+& {
+            margin-left: 47px;
+        }
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    &__social-item{
+        &+&{
+            margin-left: 22px;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    &__inner{
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    &__nav{
+        max-width: 682px;
+        width: 100%;
+    }
+
+    &__list{
+        justify-content: space-between;        
+    }
+
+    &__item, &__call{
+        transition: color, 0.3s;
+    }
+
+    &__item{
+        position: relative;        
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: $orange;
+            transition: width, 0.3s;
+        }
+        &:hover{
+            color: $orange;
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+
+    &__call{
+        padding: 8px 11px 8px 12px;
+        border: 2px solid $orange;
+        color: $orange;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 700;
+
+        &:hover{
+            color: white;
+        }
+    }
+}
