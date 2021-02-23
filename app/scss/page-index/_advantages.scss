@@ -1,0 +1,22 @@
+.advantages {
+    position: relative;
+    z-index: 5;
+    margin-top: -146px;
+    padding: 34px 0 43px;
+    background: rgba(255, 255, 255, 0.1);
+
+    &__inner {
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+
+    &__item {
+        max-width: 175px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right center;
+    }
+}
