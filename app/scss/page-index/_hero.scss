@@ -1,7 +1,42 @@
 .hero{
-    height: 100vh;
+    position: relative;
+    height: 1014px;
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+
+    &__box{
+        position: absolute;
+        left: 50%;
+        bottom: 40%;
+        transform: translateX(-50%);
+        max-width: 776px;
+        width: 100%;
+        color: white;
+    }
+
+    &__title{
+        margin-bottom: 29px;
+        font-size: 40px;
+        line-height: 56px;
+        font-family: "Playfair", sans-serif;
+    }
+
+    &__text{
+        margin-bottom: 60px;
+        line-height: 25px;
+        letter-spacing: 0.2px;
+    }
+
+    &__order{
+        padding: 11px 19px;
+        background-color: $orange;
+        font-weight: 700;
+        transition: opacity, 0.2s;
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
 }
