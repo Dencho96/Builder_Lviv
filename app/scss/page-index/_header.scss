@@ -148,4 +148,11 @@
             font-size: 14px;
         }
     }
+
+    &__menu{
+        display: none;
+        @include maxw992{
+            display: block;
+        }
+    }
 }
