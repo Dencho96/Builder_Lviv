@@ -25,20 +25,20 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="header__social-list d-flex">
-                        <li class="header__social-item">
-                            <a class="header__social-link" href="#">
-                                <img class="header__social-img" src="images/icons/icon-linkedin.svg" alt="">
+                    <ul class="social d-flex">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/icons/icon-linkedin.svg" alt="">
                             </a>
                         </li>
-                        <li class="header__social-item">
-                            <a class="header__social-link" href="#">
-                                <img class="header__social-img" src="images/icons/icon-facebook.svg" alt="">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/icons/icon-facebook.svg" alt="">
                             </a>
                         </li>
-                        <li class="header__social-item">
-                            <a class="header__social-link" href="#">
-                                <img class="header__social-img" src="images/icons/icon-insta.svg" alt="">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/icons/icon-insta.svg" alt="">
                             </a>
                         </li>
                     </ul>
@@ -48,7 +48,7 @@
         <div class="header__main">
             <div class="container">
                 <div class="header__inner d-flex">
-                    <a class="logo" href="#">
+                    <a class="logo header__logo" href="#">
                         <img class="logo__img" src="images/logo.png" alt="Builder">
                     </a>
                     <nav class="header__nav">
@@ -83,6 +83,11 @@
                     <a class="header__call" href="#">
                         Замовити дзвінок
                     </a>
+                    <button class="hamburger hamburger--collapse header__menu" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -109,19 +114,24 @@
         <section class="advantages">
             <div class="container">
                 <div class="advantages__inner d-flex">
-                    <div class="advantages__item" style="background-image: url('images/icons/advantages-icon-1.svg');">
+                    <div class="advantages__item d-flex"
+                        style="background-image: url('images/icons/advantages-icon-1.svg');">
                         Фіксований кошторис
                     </div>
-                    <div class="advantages__item" style="background-image: url('images/icons/advantages-icon-2.svg');">
+                    <div class="advantages__item d-flex"
+                        style="background-image: url('images/icons/advantages-icon-2.svg');">
                         Працюємо без авансів
                     </div>
-                    <div class="advantages__item" style="background-image: url('images/icons/advantages-icon-3.svg');">
+                    <div class="advantages__item d-flex"
+                        style="background-image: url('images/icons/advantages-icon-3.svg');">
                         Щотижнева звітність робочого процесу
                     </div>
-                    <div class="advantages__item" style="background-image: url('images/icons/advantages-icon-4.svg');">
+                    <div class="advantages__item d-flex"
+                        style="background-image: url('images/icons/advantages-icon-4.svg');">
                         Здача роботи у зазначені терміни
                     </div>
-                    <div class="advantages__item" style="background-image: url('images/icons/advantages-icon-5.svg');">
+                    <div class="advantages__item d-flex"
+                        style="background-image: url('images/icons/advantages-icon-5.svg');">
                         Гарантія на роботи
                     </div>
                 </div>
@@ -136,28 +146,395 @@
             </div>
             <div class="about__wrapper">
                 <div class="about__box">
-                    <div class="text-orange">
+                    <div class="text-orange text-orange--left">
                         Про нас
                     </div>
                     <div class="title about__title">
                         Хто ми такі?
                     </div>
                     <p class="about__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet
-                        tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem,
-                        at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at
+                        aliquet
+                        tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo
+                        lorem,
+                        at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et
+                        magnis
                         dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin consequat mauris
-                        augue, id suscipit risus mattis non. Sed a vulputate diam. 
+                        augue, id suscipit risus mattis non. Sed a vulputate diam.
                     </p>
                     <p class="about__text">
-                        Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed sem egestas hendrerit at vel quam.
+                        Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed sem egestas hendrerit at vel
+                        quam.
                         Vestibulum maximus velit dui.
                     </p>
                 </div>
             </div>
-            
+
         </section>
+
+        <section class="how">
+            <div class="container how__container">
+                <div class="text-orange text-orange--left">
+                    Етапи роботи
+                </div>
+                <div class="title how__title">
+                    Як ми працюємо?
+                </div>
+                <ul class="how__list d-flex">
+                    <li class="how__item">
+                        <div class="how__step">
+                            <div class="pie-wrapper progress-20 style-2">
+                                <span class="label">1</span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+
+                        <div class="how__descr">
+                            Виїзд майстра на обєкт для замірів
+                        </div>
+                    </li>
+                    <li class="how__item">
+                        <div class="how__step">
+                            <div class="pie-wrapper progress-30 style-2">
+                                <span class="label">2</span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="how__descr">
+                            Складання кошторису згідно попередніх домовлень
+                        </div>
+                    </li>
+                    <li class="how__item">
+                        <div class="how__step">
+                            <div class="pie-wrapper progress-50 style-2">
+                                <span class="label">3</span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="how__descr">
+                            Підписання договору
+                        </div>
+                    </li>
+                    <li class="how__item">
+                        <div class="how__step">
+                            <div class="pie-wrapper progress-60 style-2">
+                                <span class="label">4</span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="how__descr">
+                            Закупівля матеріалу
+                        </div>
+                    </li>
+                    <li class="how__item">
+                        <div class="how__step">
+                            <div class="pie-wrapper progress-80 style-2">
+                                <span class="label">5</span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="how__descr">
+                            Вчасна здача проекту
+                        </div>
+                    </li>
+                    <li class="how__item">
+                        <div class="how__step">
+                            <div class="pie-wrapper progress-100 style-2">
+                                <span class="label">6</span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="how__descr">
+                            Щасливі замовники
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="text-orange text-orange--portfolio">
+                Портфоліо
+            </div>
+            <div class="title portfolio__title">
+                Наші роботи
+            </div>
+            <div class="portfolio__inner d-flex">
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__box">
+                        <div class="portfolio__name">
+                            Назва проекта
+                        </div>
+                        <p class="portfolio__descr">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at
+                            aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam
+                            porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci
+                            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus
+                            id quam nulla.
+                        </p>
+                        <div class="portfolio__duration">
+                            <span class="text-bold">Термін ремонта:</span> 21 день
+                        </div>
+                        <div class="portfolio__square">
+                            <span class="text-bold">Площа:</span> 81 м2
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__gallery d-flex">
+                    <div class="swiper-container portfolio__slider-mini">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide portfolio__slide-mini" src="images/portfolio-1.jpg" alt="">
+                            <img class="swiper-slide portfolio__slide-mini" src="images/portfolio-2.jpg" alt="">
+                            <img class="swiper-slide portfolio__slide-mini" src="images/portfolio-3.jpg" alt="">
+                            <img class="swiper-slide portfolio__slide-mini" src="images/portfolio-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="portfolio__slider-wrapper">
+                        <div class="swiper-container portfolio__slider-main">
+                            <div class="swiper-wrapper">
+                                <img class="swiper-slide portfolio__slide" src="images/portfolio-1.jpg" alt="">
+                                <img class="swiper-slide portfolio__slide" src="images/portfolio-2.jpg" alt="">
+                                <img class="swiper-slide portfolio__slide" src="images/portfolio-3.jpg" alt="">
+                                <img class="swiper-slide portfolio__slide" src="images/portfolio-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="portfolio__menu d-flex">
+                            <div class="portfolio__pagination"></div>
+                            <button class="portfolio__btn portfolio__btn--prev"></button>
+                            <button class="portfolio__btn portfolio__btn--next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__inner">
+                <div class="text-orange">
+                    Відгуки
+                </div>
+                <div class="title reviews__title">
+                    Що про нас говорять наші клієнти
+                </div>
+
+                <div class="reviews__slider-wrapper">
+                    <div class="swiper-container reviews__slider">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide reviews__slide">
+                                <p class="reviews__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc
+                                    venenatis
+                                    varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel.
+                                    Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut
+                                    nisl.
+                                    Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet
+                                    lectus
+                                    non enim maximus varius sed non arcu.
+                                </p>
+                                <div class="reviews__info">
+                                    <span class="reviews__name">
+                                        Елена Филонова
+                                    </span>
+                                    ,
+                                    <span class="reviews__city">
+                                        Львів
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="reviews__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc
+                                    venenatis
+                                    varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est
+                                <div class="reviews__info">
+                                    <span class="reviews__name">
+                                        Віктор
+                                    </span>
+                                    ,
+                                    <span class="reviews__city">
+                                        Львів
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p class="reviews__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc
+                                    venenatis
+                                    varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel.
+                                    Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut
+                                    nisl.
+                                </p>
+                                <div class="reviews__info">
+                                    <span class="reviews__name">
+                                        Іван
+                                    </span>
+                                    ,
+                                    <span class="reviews__city">
+                                        Кам'янець-Подільський
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p class="reviews__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <div class="reviews__info">
+                                    <span class="reviews__name">
+                                        Артур
+                                    </span>
+                                    ,
+                                    <span class="reviews__city">
+                                        Хмельницький
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="reviews__menu d-flex">
+                    <button class="reviews__btn reviews__btn--prev">
+                        <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 26L2 14L14 2" stroke="#FF9900" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="reviews__pagination"></div>
+                    <button class="reviews__btn reviews__btn--next">
+                        <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 26L14 14L2 2" stroke="#FF9900" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__inner">
+                <div class="contact__title">
+                    Зв'яжіться з нами
+                </div>
+                <p class="contact__text">
+                    Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин.
+                </p>
+                <form class="contact__form d-flex" action="#">
+                    <input class="contact__name" type="text" placeholder="Ім'я">
+                    <input class="contact__email" type="text" placeholder="E-mail">
+                    <textarea class="contact__message" placeholder="Ваше повідомлення.."></textarea>
+                    <button class="contact__btn" type="submit">
+                        Надіслати
+                    </button>
+                </form>
+            </div>
+
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__inner d-flex">
+                <div class="footer__col">
+                    <a class="logo footer__logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="Builder Lviv">
+                    </a>
+                    <p class="footer__text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                    </p>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Портфоліо
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Етапи роботи
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <address class="footer__address">
+                        <div class="footer__location">
+                            Україна, м.Львів,
+                            <span class="footer__location-street">
+                                вул. Зелена 230
+                            </span>
+                        </div>
+                        <a class="footer__phone" href="tel:0978577047">
+                            (097)857-70-47
+                        </a>
+                    </address>
+                </div>
+            </div>
+            <ul class="social d-flex footer__social">
+                <li class="social__item footer__social-item">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="images/icons/icon-linkedin.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item footer__social-item">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="images/icons/icon-facebook.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item footer__social-item">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="images/icons/icon-insta.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copy">
+            <div class="container footer__container">
+                2020 © Come Back Agency. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script src="js/main.min.js"></script>

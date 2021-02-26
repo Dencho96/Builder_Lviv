@@ -1,13 +1,26 @@
 .about{
     justify-content: space-between;
 
+    @include maxw767{
+        flex-direction: column;
+    }
+
     &__experience{
         position: relative;
         max-width: 545px;
         width: 100%;
-        height: 766px;
+        height: 758px;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include maxw767{
+            max-width: 100%;
+            height: 500px;
+        }
+
+        @include maxw576{
+            height: 400px;
+        }
     }
 
     &__years{
@@ -20,31 +33,47 @@
         background-color: #FFB800;
         color: white;
         font-size: 30px;
+
+        @include maxw767{
+            font-size: 25px;
+            width: 180px;
+            height: 180px;
+        }
     }
 
     &__wrapper{
-        padding-top: 148px;
+        padding-top: 142px;
         width: 100%;
         background-image: url("../../images/about-bg.jpg");
         background-repeat: no-repeat;
         background-position: right 375px;
+        @include maxw767{
+            padding: 35px 0 35px;
+        }
     }
 
     &__box{
         margin: 0 auto;
-        max-width: 530px;
+        padding-left: 26px;
+        max-width: 576px;
         width: 100%;
+
+        @include maxw1205{
+            padding: 0 15px;
+        }
     }
 
     &__title{
-        margin-bottom: 27px;        
+        margin: 7px 0 27px 0;
+        text-align: left;   
     }
 
     &__text{
         line-height: 25px;
+        letter-spacing: 0.2px;
         color: #7c7c7c;
         &+&{
-            margin-top: 38px;
+            margin-top: 27px;
         }
     }
 }

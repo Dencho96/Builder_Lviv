@@ -1,0 +1,148 @@
+.portfolio {
+    padding-top: 100px;
+    background-image: url("../images/portfolio-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center 350px;
+    letter-spacing: 0.2px;
+
+    @include maxw992 {
+        padding-top: 40px;
+    }
+
+    &__title {
+        margin: -5px 0 51px 0;
+        text-align: center;
+
+        @include maxw992 {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__inner {
+        @include maxw992{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        padding: 128px 15px 50px;
+
+        @include maxw992 {
+            padding: 50px 15px;
+        }
+    }
+
+    &__box {
+        margin: 0 auto;
+        padding-left: 24px;
+        max-width: 504px;
+        width: 100%;
+    }
+
+    &__name {
+        padding-left: 3px;
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+
+    }
+
+    &__descr {
+        margin-bottom: 33px;
+        line-height: 25px;
+    }
+
+    &__duration {
+        margin-bottom: 16px;
+    }
+
+    &__slider-mini {
+        margin-right: 5px;
+        max-height: 702px;
+        @include maxw992 {
+            display: none;
+        }
+    }
+
+    &__slide-mini {
+        width: 102px;
+        height: 105px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: opacity, 0.3s;
+       
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__gallery {
+        box-sizing: border-box;
+    }
+
+    &__slider-main {
+        width: 590px;
+        height: 590px;
+
+        @include maxw767{
+            width: 460px;
+            height: 370px;
+        }
+
+        @include maxw576{
+            width: 320px;
+            height: 320px;
+        }
+    }
+
+
+    &__menu {
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 77px 35px;
+        background-color: #FFB800;
+
+        @include maxw767{
+            padding: 25px 35px 25px;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        margin-left: 42px;
+
+        @include maxw767{
+            margin-left: 10px;
+        }
+    }
+
+    &__btn {
+        height: 24px;
+        width: 12px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &--prev {
+            margin: 0 59px 0 auto;
+            background-image: url("../images/portfolio-prev.svg");
+        }
+
+        &--next {
+            background-image: url("../images/portfolio-next.svg");
+        }
+    }
+}

@@ -4,16 +4,26 @@
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
+
+    
 
     &__box{
         position: absolute;
-        left: 50%;
-        bottom: 40%;
+        left: 50.2%;
+        bottom: 42%;
         transform: translateX(-50%);
         max-width: 776px;
         width: 100%;
         color: white;
+
+        @include maxw992{
+            padding: 0 25px;
+        }
+
+        @include maxw576{
+            bottom: 45%;
+        }
     }
 
     &__title{
@@ -21,19 +31,41 @@
         font-size: 40px;
         line-height: 56px;
         font-family: "Playfair", sans-serif;
+        letter-spacing: 0.2px;
+
+        @include maxw992{
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        @include maxw767{
+            font-size: 28px;
+            line-height: 36px;
+        }
     }
 
     &__text{
         margin-bottom: 60px;
         line-height: 25px;
         letter-spacing: 0.2px;
+
+        @include maxw992{
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        @include maxw576{
+            margin-bottom: 35px;
+        }
     }
 
     &__order{
         padding: 11px 19px;
         background-color: $orange;
         font-weight: 700;
+        font-size: 16px;
         transition: opacity, 0.2s;
+        box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
 
         &:hover{
             opacity: 0.7;

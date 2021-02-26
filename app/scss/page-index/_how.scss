@@ -1,0 +1,108 @@
+.how {
+    padding: 67px 0 121px;
+    background-color: black;
+    color: white;
+
+    @include maxw992 {
+        padding: 55px 0 70px;
+    }
+
+    &__container{
+        max-width: 1132px;
+    }
+
+    &__title {
+        margin-top: 7px;
+        text-align: left;
+        margin-bottom: 97px;
+
+        @include maxw992{
+            margin-bottom: 35px;
+            text-align: center;
+            font-size: 28px;
+        }
+    }
+
+    &__list {
+        justify-content: space-between;
+        max-width: 1067px;
+        width: 100%;
+        margin: 0 auto;
+
+        @include maxw1205{
+            max-width: 920px;
+        }
+
+        @include maxw992{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+        max-width: 153px;
+        width: 100%;
+        
+        @include maxw992{
+            text-align: center;
+            &+&{
+                margin-top: 35px;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: calc(100% - 36px);
+            background-color: white;
+            top: 33px;
+            left: 67px;
+
+            @include maxw1205{
+                width: calc(100% - 65px);
+            }
+
+            @include maxw992{
+                content: none;
+            }
+        }
+
+        &:last-child {
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    &__step,
+    &__descr {
+        letter-spacing: 0.2px;
+    }
+
+    &__step {
+        position: relative;
+        margin-bottom: 29px;
+        width: 70px;
+        height: 70px;
+        font-family: "Playfair", sans-serif;
+        font-size: 40px;
+        line-height: 56px;
+
+        @include maxw992{
+            margin: 0 auto 10px;
+        }
+    }
+
+    &__descr {
+        font-size: 14px;
+        line-height: 20px;
+        @include maxw1205{
+            max-width: 135px;
+        }
+        @include maxw992{
+            max-width: 100%;
+        }
+    }
+}

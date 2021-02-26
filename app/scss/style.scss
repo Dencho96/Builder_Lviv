@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'vars';
+@import 'mixins';
 @import 'global';
 
 @import 'page-index/header';
@@ -7,3 +8,12 @@
 @import 'page-index/hero';
 @import 'page-index/advantages';
 @import 'page-index/about';
+@import 'page-index/how';
+@import 'page-index/portfolio';
+@import 'page-index/reviews';
+@import 'page-index/contact';
+
+@import 'page-index/footer';
+
+@import 'components/diagram';
+@import 'components/social';
